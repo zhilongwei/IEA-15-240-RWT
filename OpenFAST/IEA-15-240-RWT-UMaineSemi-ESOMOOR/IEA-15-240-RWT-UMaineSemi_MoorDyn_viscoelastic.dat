@@ -5,7 +5,7 @@ FALSE    Echo      - echo the input file data (flag)
 Name  Diam  MassDen  EA                         BA/-zeta           EI    Cd    Ca    CdAx   CaAx
 (-)   (m)   (kg/m)   (N)                        (N-s/-)            (-)   (-)   (-)   (-)    (-)
 chain 0.333  684.50  2.929E+09                  -1.0               0    2.0   0.82  0.4    0.27
-poly  0.256   44.60  3.389E+08|4.158E+08|23.13  1.0E+05|1.0E+10    0    2.0   0.82  0.4    0.27
+poly  0.256   44.60  3.389E+08|4.158E+08|23.13  1.0E+10|1.0E+5     0    2.0   0.82  0.4    0.27
 ---------------------- POINTS --------------------------------                                           
 ID   Type      X         Y       Z       M    V    CdA   CA
 (-)  (-)      (m)       (m)     (m)    (kg) (m^3) (m^2) (-)
