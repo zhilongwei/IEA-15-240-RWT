@@ -3,7 +3,7 @@ IEA 15 MW offshore reference model on UMaine VolturnUS-S semi-submersible floati
 ---------------------- SIMULATION CONTROL -------------------------------------- 
 False                  Echo        - Echo input data to <RootName>.ech (flag) 
 "FATAL"                AbortLevel  - Error level when simulation should abort (string) {"WARNING", "SEVERE", "FATAL"} 
-10.0                   TMax        - Total run time (s) 
+4200.0                 TMax        - Total run time (s) 
 0.025                  DT          - Integration time step (s)  
 3                      ModCoupling - Module coupling method (switch) {1=loose; 2=tight with fixed Jacobian updates (DT_UJac); 3=tight with automatic Jacobian updates}
 2                      InterpOrder - Interpolation order for input/output time history (-) {1=linear, 2=quadratic} 
