@@ -42,7 +42,7 @@ ID   LineType  AttachA  AttachB  UnstrLen  NumSegs  LineOutputs
 ---------------------- SYROPE IC --------------------------------------
 Line(s)   Tmax0    Tmean0
 (-)        (N)       (N)
-7,8,9    3.53e6    1.18e6
+7,8,9    9.41e6    1.18e6
 ---------------------- OPTIONS -----------------------------------------
 0.2e-3   dtM       - time step to use in mooring integration (s)
 3.0e6    kbot      - bottom stiffness (Pa/m)

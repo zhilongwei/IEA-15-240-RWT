@@ -38,17 +38,17 @@ F                      MirrorRotor - Flag to reverse rotor rotation direction [1
 243.3                  WtrDpth     - Water depth (m)
 0                      MSL2SWL     - Offset between still-water level and mean sea level (m) [positive upward]
 ---------------------- INPUT FILES --------------------------------------------- 
-"IEA-15-240-RWT-UMaineSemi_ElastoDyn.dat"    EDFile          - Name of file containing ElastoDyn input parameters (quoted string) 
+"IEA-15-240-RWT-UMaineSemi_ElastoDyn_NSS.dat"    EDFile          - Name of file containing ElastoDyn input parameters (quoted string) 
 ""                     BDBldFile(1) - Name of file containing BeamDyn input parameters for blade 1 (quoted string) 
 ""                     BDBldFile(2) - Name of file containing BeamDyn input parameters for blade 2 (quoted string) 
 ""                     BDBldFile(3) - Name of file containing BeamDyn input parameters for blade 3 (quoted string) 
-"IEA-15-240-RWT_InflowFile.dat"            InflowFile      - Name of file containing inflow wind input parameters (quoted string) 
-"IEA-15-240-RWT-UMaineSemi_AeroDyn15.dat"  AeroFile     - Name of file containing aerodynamic input parameters (quoted string) 
-"IEA-15-240-RWT-UMaineSemi_ServoDyn.dat"    ServoFile       - Name of file containing control and electrical-drive input parameters (quoted string) 
-"IEA-15-240-RWT-UMaineSemi_SeaState.dat"    SeaStFile   - Name of file containing sea state input parameters (quoted string)
+"IEA-15-240-RWT_InflowFile_NSS.dat"            InflowFile      - Name of file containing inflow wind input parameters (quoted string) 
+"IEA-15-240-RWT-UMaineSemi_AeroDyn15_NSS.dat"  AeroFile     - Name of file containing aerodynamic input parameters (quoted string) 
+"IEA-15-240-RWT-UMaineSemi_ServoDyn_NSS.dat"    ServoFile       - Name of file containing control and electrical-drive input parameters (quoted string) 
+"IEA-15-240-RWT-UMaineSemi_SeaState_NSS.dat"    SeaStFile   - Name of file containing sea state input parameters (quoted string)
 "IEA-15-240-RWT-UMaineSemi_HydroDyn.dat"      HydroFile       - Name of file containing hydrodynamic input parameters (quoted string) 
 "none"                 SubFile         - Name of file containing sub-structural input parameters (quoted string) 
-"IEA-15-240-RWT-UMaineSemi_MoorDyn.dat"      MooringFile     - Name of file containing mooring system input parameters (quoted string) 
+"IEA-15-240-RWT-UMaineSemi_MoorDyn_viscoelastic.dat"      MooringFile     - Name of file containing mooring system input parameters (quoted string) 
 "none"                 IceFile         - Name of file containing ice input parameters (quoted string) 
 "unused"               SoilFile        - Name of the file containing the SoilDyn input parameters (quoted string)
 ---------------------- OUTPUT -------------------------------------------------- 
