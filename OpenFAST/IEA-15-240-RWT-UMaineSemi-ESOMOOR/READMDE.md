@@ -66,3 +66,11 @@ Eight `.fst` cases are provided:
 ```bash
 openfast IEA-15-240-RWT-UMaineSemi_syrope_Tmax_15_ESS.fst
 ```
+
+> [!NOTE]
+> The IEA-15-240-RWT model has not yet been upgraded to OpenFAST v5.0.0, where the Syrope functions are implemented.
+> Some new inputs required by OpenFAST v5.0.0 may therefore use placeholder values rather than fully validated physical values.
+> Examples include:
+> - ElastoDyn
+>   - PitSpr(1), PitSpr(2), PitSpr(3)
+>   - PitDamp(1), PitDamp(2), PitDamp(3)
