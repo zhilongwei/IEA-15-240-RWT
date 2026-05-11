@@ -33,9 +33,9 @@ ID   LineType  AttachA  AttachB  UnstrLen  NumSegs  LineOutputs
 4    chain       8         4       30.000    20        -
 5    chain       9         5       30.000    20        -
 6    chain       9         6       30.000    20        -
-7     poly      10         7      681.240    80        -
-8     poly      11         8      681.240    80        -
-9     poly      12         9      681.240    80        -
+7     poly      10         7      681.240    80        ts
+8     poly      11         8      681.240    80        ts
+9     poly      12         9      681.240    80        ts
 10   chain      13        10      140.800    100       -
 11   chain      14        11      140.800    100       -
 12   chain      15        12      140.800    100       -
