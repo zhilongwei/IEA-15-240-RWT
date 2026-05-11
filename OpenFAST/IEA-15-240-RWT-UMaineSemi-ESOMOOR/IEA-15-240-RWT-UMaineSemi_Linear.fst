@@ -3,7 +3,7 @@ IEA 15 MW offshore reference model on UMaine VolturnUS-S semi-submersible floati
 ---------------------- SIMULATION CONTROL -------------------------------------- 
 False                  Echo        - Echo input data to <RootName>.ech (flag) 
 "FATAL"                AbortLevel  - Error level when simulation should abort (string) {"WARNING", "SEVERE", "FATAL"} 
-9000.0                 TMax        - Total run time (s) 
+100.0                  TMax        - Total run time (s) 
 0.025                  DT          - Integration time step (s)  
 3                      ModCoupling - Module coupling method (switch) {1=loose; 2=tight with fixed Jacobian updates (DT_UJac); 3=tight with automatic Jacobian updates}
 2                      InterpOrder - Interpolation order for input/output time history (-) {1=linear, 2=quadratic} 
@@ -40,17 +40,17 @@ F                      MirrorRotor - Flag to reverse rotor rotation direction [1
 243.3                  WtrDpth     - Water depth (m)
 0                      MSL2SWL     - Offset between still-water level and mean sea level (m) [positive upward]
 ---------------------- INPUT FILES --------------------------------------------- 
-"IEA-15-240-RWT-UMaineSemi_ElastoDyn_ESS.dat"    EDFile          - Name of file containing ElastoDyn input parameters (quoted string) 
+"IEA-15-240-RWT-UMaineSemi_ElastoDyn.dat"    EDFile          - Name of file containing ElastoDyn input parameters (quoted string) 
 ""                     BDBldFile(1) - Name of file containing BeamDyn input parameters for blade 1 (quoted string) 
 ""                     BDBldFile(2) - Name of file containing BeamDyn input parameters for blade 2 (quoted string) 
 ""                     BDBldFile(3) - Name of file containing BeamDyn input parameters for blade 3 (quoted string) 
-"IEA-15-240-RWT_InflowFile_ESS.dat"            InflowFile      - Name of file containing inflow wind input parameters (quoted string) 
-"IEA-15-240-RWT-UMaineSemi_AeroDyn15_ESS.dat"  AeroFile     - Name of file containing aerodynamic input parameters (quoted string) 
-"IEA-15-240-RWT-UMaineSemi_ServoDyn_ESS.dat"    ServoFile       - Name of file containing control and electrical-drive input parameters (quoted string) 
-"IEA-15-240-RWT-UMaineSemi_SeaState_ESS.dat"    SeaStFile   - Name of file containing sea state input parameters (quoted string)
-"IEA-15-240-RWT-UMaineSemi_HydroDyn.dat"      HydroFile       - Name of file containing hydrodynamic input parameters (quoted string) 
+"IEA-15-240-RWT_InflowFile.dat"            InflowFile      - Name of file containing inflow wind input parameters (quoted string) 
+"IEA-15-240-RWT-UMaineSemi_AeroDyn15.dat"  AeroFile        - Name of file containing aerodynamic input parameters (quoted string) 
+"IEA-15-240-RWT-UMaineSemi_ServoDyn.dat"   ServoFile       - Name of file containing control and electrical-drive input parameters (quoted string) 
+"IEA-15-240-RWT-UMaineSemi_SeaState.dat"   SeaStFile       - Name of file containing sea state input parameters (quoted string)
+"IEA-15-240-RWT-UMaineSemi_HydroDyn.dat"   HydroFile       - Name of file containing hydrodynamic input parameters (quoted string) 
 "none"                 SubFile         - Name of file containing sub-structural input parameters (quoted string) 
-"IEA-15-240-RWT-UMaineSemi_MoorDyn_syrope_Tmax_5pctMBL.dat"      MooringFile     - Name of file containing mooring system input parameters (quoted string) 
+"./MD/IEA-15-240-RWT-UMaineSemi_MD_Linear.dat"      MooringFile     - Name of file containing mooring system input parameters (quoted string) 
 "none"                 IceFile         - Name of file containing ice input parameters (quoted string) 
 "unused"               SoilFile        - Name of the file containing the SoilDyn input parameters (quoted string)
 ---------------------- OUTPUT -------------------------------------------------- 
