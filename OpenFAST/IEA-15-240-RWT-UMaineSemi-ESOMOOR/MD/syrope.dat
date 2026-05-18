@@ -2,6 +2,7 @@ owc.dat     OWC             Original working curve lookup table path
 LINEAR      WCType          Working curve formula: LINEAR, QUADRATIC, or EXP
 4.20e8      k1              First parameter defining the working curve shape
 0.0         k2              Second parameter defining the working curve shape
-TRUE        AdaptiveC2      Use adaptive slow spring damping based on a target period; if true, the BA in the Line TYPES section will NOT be used
-300.0       CritT           Target period to separate wave-frequency and low-frequency responses from slow responses; used when AdaptiveC2=True
-1.0e-5      DampingRatio    The fast spring dampint relative to the slow spring damping, for numerical stability, usually small; used when AdaptiveC2=True
+TRUE        DualDamping     Use adaptive slow spring damping based on a target period; if true, the BA in the Line TYPES section will NOT be used
+1.0e11      OWCDamping      Static damping for the original working curve; used when DualDamping=True; BA field in the main moordyn input file will be omiited
+8.0e11      WCDamping       Static damping for the working curve; used when DualDamping=True; BA_D field in the main moordyn input file will be omiited
+1.0e-5      DampingRatio    The fast spring dampint relative to the slow spring damping, for numerical stability, usually small; used when DualDamping=True
