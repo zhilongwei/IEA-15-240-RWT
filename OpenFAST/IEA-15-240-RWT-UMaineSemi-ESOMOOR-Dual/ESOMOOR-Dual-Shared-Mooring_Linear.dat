@@ -52,7 +52,7 @@ ID   LineType  AttachA  AttachB  UnstrLen  NumSegs  LineOutputs
 243.3    WtrDpth   - water depth (m) <<< must be specified for farm-level mooring
 3.0e6    kbot      - bottom stiffness (Pa/m)
 3.0e5    cbot      - bottom damping (Pa-s/m)
-1.0e-3   dtIC      - time interval for analyzing convergence during IC gen (s)
+0.1      dtIC      - time interval for analyzing convergence during IC gen (s)
 100.0    TmaxIC    - max time for ic gen (s)
 4.0      CdScaleIC - factor by which to scale drag coefficients during dynamic relaxation (-)
 0.001    threshIC  - threshold for IC convergence (-)                    
