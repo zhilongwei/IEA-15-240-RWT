@@ -1,0 +1,117 @@
+--------------------- MoorDyn Input File ------------------------------------
+Use polyester ropes with constant stiffness
+FALSE    Echo      - echo the input file data (flag)                                            
+----------------------- LINE TYPES ------------------------------------------
+TypeName  Diam    Mass/m    EA          BA/-zeta     EI      Cd    Ca    CdAx  CaAx  Cl   dF   cF
+(name)    (m)     (kg/m)    (N)         (N-s/-)    (N-m^2)   (-)   (-)   (-)   (-)   (-)  (-)  (-)
+chain     0.333   684.50    2.929E+09   -1.0         0       2.4   1.00  0.0   0.0   0.0  0.0  0.0
+poly      0.203    44.60    4.21e8      -1.0         0       1.6   1.00  0.0   0.0   0.0  0.0  0.0
+-------------------------------- POINTS --------------------------------
+ ID  Attachment         X         Y         Z   Mass  Volume    CdA   Ca
+(#)  (word/ID)        (m)       (m)       (m)   (kg)   (m^3)  (m^2)  (-)
+  1  Turbine1      29.000   -50.229   -14.000      0       0      0    0
+  2  Free           0.000   -80.970   -27.730      0       0      0    0
+  3  Free           0.000  -741.571  -206.297      0       0      0    0
+  4  Fixed          0.000  -876.710  -243.300      0       0      0    0
+  5  Turbine1     -58.000     0.000   -14.000      0       0      0    0
+  6  Free         -70.122    40.485   -27.730      0       0      0    0
+  7  Free        -642.219   370.785  -206.297      0       0      0    0
+  8  Fixed       -759.253   438.355  -243.300      0       0      0    0
+  9  Turbine2      29.000   -50.229   -14.000      0       0      0    0
+ 10  Free        1600.000   -80.970   -27.730      0       0      0    0
+ 11  Free        1600.000  -741.571  -206.297      0       0      0    0
+ 12  Fixed       1600.000  -876.710  -243.300      0       0      0    0
+ 13  Turbine2      29.000    50.229   -14.000      0       0      0    0
+ 14  Free        1670.122    40.485   -27.730      0       0      0    0
+ 15  Free        2242.219   370.785  -206.297      0       0      0    0
+ 16  Fixed       2359.253   438.355  -243.300      0       0      0    0
+ 17  Turbine3     -58.000     0.000   -14.000      0       0      0    0
+ 18  Free         729.878  1426.126   -27.730      0       0      0    0
+ 19  Free         157.781  1756.426  -206.297      0       0      0    0
+ 20  Fixed         40.747  1823.996  -243.300      0       0      0    0
+ 21  Turbine3      29.000    50.229   -14.000      0       0      0    0
+ 22  Free         870.122  1426.126   -27.730      0       0      0    0
+ 23  Free        1442.219  1756.426  -206.297      0       0      0    0
+ 24  Fixed       1559.253  1823.996  -243.300      0       0      0    0
+ 25  Turbine1      29.000    50.229   -14.000      0       0      0    0
+ 26  Free         256.366    29.000  -146.000  5e+05       0      0    0
+ 27  Free        1343.634    29.000  -146.000  5e+05       0      0    0
+ 28  Turbine2     -58.000     0.000   -14.000      0       0      0    0
+ 29  Turbine1      29.000    50.229   -14.000      0       0      0    0
+ 30  Free         153.298   207.519  -146.000  5e+05       0      0    0
+ 31  Free         696.932  1149.121  -146.000  5e+05       0      0    0
+ 32  Turbine3      29.000   -50.229   -14.000      0       0      0    0
+ 33  Turbine2     -58.000     0.000   -14.000      0       0      0    0
+ 34  Free        1446.702   207.519  -146.000  5e+05       0      0    0
+ 35  Free         903.068  1149.121  -146.000  5e+05       0      0    0
+ 36  Turbine3      29.000   -50.229   -14.000      0       0      0    0
+---------------------------- LINES ----------------------------
+ ID  LineType  AttachA  AttachB  UnstrLen  NumSegs  LineOutputs
+(#)  (name)       (ID)     (ID)       (m)      (-)  (-)        
+  1  chain           4        3   140.800      100  -          
+  2  poly            3        2   681.240       80  -          
+  3  chain           2        1    30.000       20  -          
+  4  chain           8        7   140.800      100  -          
+  5  poly            7        6   681.240       80  -          
+  6  chain           6        5    30.000       20  -          
+  7  chain          12       11   140.800      100  -          
+  8  poly           11       10   681.240       80  -          
+  9  chain          10        9    30.000       20  -          
+ 10  chain          16       15   140.800      100  -          
+ 11  poly           15       14   681.240       80  -          
+ 12  chain          14       13    30.000       20  -          
+ 13  chain          20       19   140.800      100  -          
+ 14  poly           19       18   681.240       80  -          
+ 15  chain          18       17    30.000       20  -          
+ 16  chain          24       23   140.800      100  -          
+ 17  poly           23       22   681.240       80  -          
+ 18  chain          22       21    30.000       20  -          
+ 19  poly           26       25   260.000       30  -          
+ 20  poly           26       27  1070.000      120  -          
+ 21  poly           27       28   260.000       30  -          
+ 22  poly           30       29   260.000       30  -          
+ 23  poly           30       31  1070.000      120  -          
+ 24  poly           31       32   260.000       30  -          
+ 25  poly           34       33   260.000       30  -          
+ 26  poly           34       35  1070.000      120  -          
+ 27  poly           35       36   260.000       30  -          
+---------------------- OPTIONS -----------------------------------------
+0.2e-3   dtM       - time step to use in mooring integration (s)
+3.0e6    kbot      - bottom stiffness (Pa/m)
+3.0e5    cbot      - bottom damping (Pa-s/m)
+0.1      dtIC      - time interval for analyzing convergence during IC gen (s)
+100.0    TmaxIC    - max time for ic gen (s)
+4.0      CdScaleIC - factor by which to scale drag coefficients during dynamic relaxation (-)
+0.001    threshIC  - threshold for IC convergence (-)                    
+---------------------- OUTPUTS -----------------------------------------
+FairTen1
+FairTen2
+FairTen3
+FairTen4
+FairTen5
+FairTen6
+FairTen7
+FairTen8
+FairTen9
+LINE3NBPX
+LINE3NBPY
+LINE3NBPZ
+LINE6NBPX
+LINE6NBPY
+LINE6NBPZ
+LINE9NBPX
+LINE9NBPY
+LINE9NBPZ
+LINE12NBPX
+LINE12NBPY
+LINE12NBPZ
+LINE15NBPX
+LINE15NBPY
+LINE15NBPZ
+LINE18NBPX
+LINE18NBPY
+LINE18NBPZ
+LINE19NBPX
+LINE19NBPY
+LINE19NBPZ
+------------------------- need this line -------------------------------------- 
