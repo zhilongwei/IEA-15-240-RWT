@@ -26,8 +26,8 @@ poly      0.203    44.60    SYROPE:syrope.dat|4.21e8|18.18  5.0e11|1.0e7  0     
  15  Free        1970.785   642.219  -206.297      0       0      0    0
  16  Fixed       2038.355   759.253  -243.300      0       0      0    0
  17  Turbine1     -58.000     0.000   -14.000      0       0      0    0
- 18  Free         200.000     0.000   -65.000  1e+05       0      0    0
- 19  Free        1400.000     0.000   -65.000  1e+05       0      0    0
+ 18  Free         262.000     0.000  -146.000  1e+05       0      0    0
+ 19  Free        1338.000     0.000  -146.000  1e+05       0      0    0
  20  Turbine2     -58.000     0.000   -14.000      0       0      0    0
 ---------------------------- LINES ----------------------------
  ID  LineType  AttachA  AttachB  UnstrLen  NumSegs  LineOutputs
@@ -44,9 +44,14 @@ poly      0.203    44.60    SYROPE:syrope.dat|4.21e8|18.18  5.0e11|1.0e7  0     
  10  chain          16       15   140.800      100  -          
  11  poly           15       14   681.240       80  -          
  12  chain          14       13    30.000       20  -          
- 13  poly           18       17   150.000       20  -          
- 14  poly           18       19  1169.000      150  -          
- 15  poly           19       20   150.000       20  -          
+ 13  poly           18       17   260.000       30  -          
+ 14  poly           18       19  1070.000      120  -          
+ 15  poly           19       20   260.000       30  -          
+---------------------- SYROPE IC --------------------------------------
+Line(s)   Tmax0    Tmean0
+(-)        (N)       (N)
+2,5,8,11   2.35e6    1.18e6
+13,15,14   2.35e6    1.18e6
 ---------------------- OPTIONS -----------------------------------------
 0.2e-3   dtM       - time step to use in mooring integration (s)
 243.3    WtrDpth   - water depth (m) <<< must be specified for farm-level mooring
@@ -63,9 +68,4 @@ FairTen3
 FairTen4
 FairTen5
 FairTen6
-LINE3TENB
-LINE4TENB
-LINE9TENB
-LINE10TENB
-LINE14TENB
 ------------------------- need this line -------------------------------------- 
